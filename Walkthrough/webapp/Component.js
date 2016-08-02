@@ -6,7 +6,7 @@ sap.ui.define([
 		"use strict";
 		return UIComponent.extend("sap.ui.demo.wt.Component", {
 			metadata : {
-				rootView : "sap.ui.demo.wt.view.App"
+				manifest : "json"
 			},
 			init : function(){
 				UIComponent.prototype.init.apply(this, arguments);
