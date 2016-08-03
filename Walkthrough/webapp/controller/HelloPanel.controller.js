@@ -9,6 +9,16 @@ sap.ui.define([
 				var sRecipient = this.getView().getModel().getProperty("/recipient/name");
 				var sMsg = oBundle.getText("helloMsg", [sRecipient]);
 				MessageToast.show(sMsg);
+			},
+			_getDialog : function() {
+				if(!this._oDialog){
+					this._oDialog = sap.ui.xmlfragment("sap.ui.demo.wt.view.HelloDialog");
+					this.getView().addDependent(this._oDialog);
+				}
+				return this._oDialog;
+			},
+			onOpenDialog : function(){
+				this._getDialog().open();
 			}
 		});
 	});
