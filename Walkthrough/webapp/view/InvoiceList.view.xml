@@ -9,7 +9,7 @@
         items="{
         	path : 'invoice>/Invoices',
         	sorter : {
-				path : 'ShippingName',
+				path : 'ShipperName',
 				group : true
 			}
         }">
