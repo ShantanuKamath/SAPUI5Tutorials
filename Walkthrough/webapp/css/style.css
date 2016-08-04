@@ -8,3 +8,10 @@ html[dir="rtl"] .myAppDemoWT.myCustomButton .sapMBtn {
 .myAppDemoWT .myCustomText{
 	font-weight: bold;
 }
+/*  ProductRating */
+.myAppDemoWTProductRating {
+	padding: 0.75rem;
+}
+.myAppDemoWTProductRating .sapMRI {
+	vertical-align: initial;
+}
