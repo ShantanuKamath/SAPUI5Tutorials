@@ -20,6 +20,9 @@ sap.ui.define([
 				this.setModel(oModel);
 				
 				this.helloDialog =new HelloDialog();
+				// create the views based on the url/hash
+				this.getRouter().initialize();
+		
 			}
 		});
 	});
