@@ -2,7 +2,7 @@
 	controllerName="sap.ui.demo.wt.controller.Detail"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:wt="sap.ui.demo.wt.control">>
+	xmlns:wt="sap.ui.demo.wt.control">
 	<Page
 		title="{i18n>detailPageTitle}"
 		showNavButton="true"
