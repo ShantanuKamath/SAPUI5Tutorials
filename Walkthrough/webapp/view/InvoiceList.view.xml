@@ -6,12 +6,18 @@
 	    id="invoiceList"
     	class="sapUiResponsiveMargin"
         width="auto"
-        items="{invoice>/Invoices}" >
+        items="{
+        	path : 'invoice>/Invoices',
+        	sorter : {
+				path : 'ShipperName',
+				group : true
+			}
+        }">
 		<headerToolbar>
         <Toolbar>
-	            <Title text="{i18n>invoiceListTitle}"/>
-	            <ToolbarSpacer/>
-	            <SearchField width="50%" search="onFilterInvoices" selectOnFocus="false"/>
+        	<Title text="{i18n>invoiceListTitle}"/>
+			<ToolbarSpacer/>
+			<SearchField width="50%" search="onFilterInvoices" selectOnFocus="false"/>
         	</Toolbar>
     	 </headerToolbar>
         <items>
